@@ -25,6 +25,7 @@ public class User {
     /**
      * Generate random user
      */
+
     public static User random(){
         return FAKE_USERS_RANDOM.get(new Random().nextInt(FAKE_USERS_RANDOM.size()));
     }

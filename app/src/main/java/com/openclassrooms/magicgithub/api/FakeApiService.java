@@ -23,8 +23,7 @@ public class FakeApiService implements ApiService {
      * This user must be get from the {@link FakeApiServiceGenerator#FAKE_USERS_RANDOM} list.
      */
     public void generateRandomUser() {
-        int randomUser = (int) (Math.random() * randomUsers.size());
-        users.add(randomUsers.get(randomUser));
+        users.add( User.random());
     }
 
     /**
